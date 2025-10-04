@@ -1,4 +1,5 @@
 import Today from "./components/Today"
+import Hour from "./components/Hour"
 import Info from "./components/Info"
 import Week from "./components/Week"
 
@@ -10,7 +11,7 @@ function MyMain () {
             <Today />
         </div>
         <div className="item2">
-
+            <Hour />
         </div>
         <div className="item3">
             <Info />
