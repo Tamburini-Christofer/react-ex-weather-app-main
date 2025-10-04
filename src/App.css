@@ -17,7 +17,7 @@ h1 {
   text-align: center;
 }
 
-h4{
+h4 {
   margin-bottom: 20px;
 }
 
@@ -46,12 +46,12 @@ h5 {
   border: 0;
 }
 
-.tue{
-  background-color:#2F2F49;
+.tue {
+  background-color: #2f2f49;
   padding: 10px 20px;
 }
 
-.btnUnits:hover{
+.btnUnits:hover {
   cursor: pointer;
   background-color: #4c4b73;
 }
@@ -89,7 +89,7 @@ h5 {
 .containerMain {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px
+  gap: 20px;
 }
 
 .containerMain div {
@@ -118,9 +118,9 @@ h5 {
   padding: 40px;
 }
 
-.containerToday div img{
+.containerToday div img {
   float: right;
-  max-width:20%;
+  max-width: 20%;
 }
 
 .containerToday div:last-child {
@@ -152,8 +152,8 @@ h5 {
   margin-top: 20px;
 }
 
-.containerWeek div{
-  background-color: #26253E;
+.containerWeek div {
+  background-color: #26253e;
   border: 0.1px solid #48487b;
   text-align: center;
   padding: 5px;
@@ -163,74 +163,99 @@ h5 {
   max-width: 70%;
 }
 
-.containerWeek div div{
+.containerWeek div div {
   border: 0;
   display: flex;
   justify-content: space-between;
 }
 
-.containerWeek div div span{
+.containerWeek div div span {
   font-size: 14px;
 }
 
-.containerHour{
+.containerHour {
   padding: 20px;
-  background-color: #25253F;
+  background-color: #25253f;
 }
 
-.headerHour{
+.headerHour {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.containerHour img{
+.containerHour img {
   max-width: 12%;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-li{
+li {
   display: flex;
   align-items: center;
-  background-color: #2F2F49;
+  background-color: #2f2f49;
   border-radius: 10px;
   border: 0.1px solid #48487b;
   margin: 15px 0;
-  padding:3px 10px;
+  padding: 3px 10px;
 }
 
-li div span{
+li div span {
   vertical-align: super;
   margin-left: 5px;
 }
 
-.gradi{
-  vertical-align:middle;
+.gradi {
+  vertical-align: middle;
 }
 
 .dropdownMenu {
   position: absolute;
   top: 62%;
   left: 71.8%;
-  background: #25253F;
+  background: #25253f;
   border: 0.1px solid #48487b;
   border-radius: 6px;
   list-style: none;
   padding: 10px;
-  box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.dropdownMenu li{
+.dropdownMenu li,
+.headerdropdownMenu li{
   padding: 10px 93px 10px 10px;
-    background-color: #25253F ;
-    border: 0;
+  background-color: #25253f;
+  border: 0;
 }
 
-.dropdownMenu li:hover{
+.dropdownMenu li:hover,
+.headerdropdownMenu li:hover{
   transform: scale(1.05);
-  background-color: #2F2F49;
+  background-color: #2f2f49;
   cursor: pointer;
 }
+
+.headerdropdownMenu {
+  position: absolute;
+  top: 13.5%;
+  left: 70%;
+  background: #25253f;
+  border: 0.1px solid #48487b;
+  border-radius: 6px;
+  list-style: none;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+hr{
+  border: 0.1px solid #48487b;
+  margin: 10px 0;
+}
+
+.headerdropdownMenu span{
+  font-size: 12px;
+  color: hsl(240, 6%, 70%);
+}
+
