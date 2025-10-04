@@ -19,7 +19,7 @@ h1{
 #containerPrincipal{
   width: 80%;
   margin: 0 auto;
-  height: 2000px;
+  height: 600px;
 }
 
 .containerHeader{
@@ -65,4 +65,29 @@ h1{
   border: 0;
   background-color: #4557D8;
   color: white;
+}
+
+.containerMain{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: #4557D8;
+  height: 100%;
+}
+
+.containerMain div{
+  background-color: brown;
+  border: 2px solid black;
+}
+
+.item1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item2{
+  grid-row: 3 span;
+}
+.item3,
+.item4{
+  grid-column: 2 span;
 }
