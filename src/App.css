@@ -11,8 +11,13 @@ body{
   background-color: #02012B;
 }
 
+h1{
+  color: white;
+  text-align: center;
+}
+
 #containerPrincipal{
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   height: 2000px;
 }
@@ -21,7 +26,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .btnUnits{
@@ -36,4 +41,28 @@ body{
   margin: 0 2px;
 }
 
+.containerInput{
+  text-align: center;
+  margin: 50px 0;
+}
 
+.containerInput>input{
+  background-color: #25253F ;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.containerInput>input::placeholder{
+  color: rgb(189, 189, 189);
+}
+
+.containerInput>button{
+  margin-left: 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #4557D8;
+  color: white;
+}
