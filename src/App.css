@@ -5,6 +5,7 @@
 }
 
 body{
+  color: white;
   font-size: 18px;
   font-weight:500;
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
@@ -14,6 +15,10 @@ body{
 h1{
   color: white;
   text-align: center;
+}
+
+h5{
+  margin-bottom: 20px;
 }
 
 #containerPrincipal{
@@ -92,7 +97,6 @@ h1{
 }
 
 .containerToday{
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -105,4 +109,20 @@ h1{
 .containerToday div:last-child{
     font-size: 64px;
     font-style: italic;
+}
+
+.containerInfo{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.containerInfo div{
+  border: 0.1px solid #48487b;
+  background-color: #25253F;
+  padding: 20px;
+}
+
+.containerInfo div span{
+  font-size: 30px;
 }

@@ -1,4 +1,5 @@
 import Today from "./components/Today"
+import Info from "./components/Info"
 
 function MyMain () {
     return(
@@ -11,7 +12,7 @@ function MyMain () {
 
         </div>
         <div className="item3">
-
+            <Info />
         </div>
         <div className="item4">
 
