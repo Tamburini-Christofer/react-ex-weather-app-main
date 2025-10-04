@@ -7,7 +7,8 @@ function Today() {
           <span>Tuesday, Aug 5, 2025</span>
         </div>
         <div>
-            68°
+          <img src="../../../public/img/icon-sunny.webp" alt="" />
+          <span>68°</span>
         </div>
       </div>
     </>

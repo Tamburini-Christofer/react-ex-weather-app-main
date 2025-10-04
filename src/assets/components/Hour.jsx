@@ -1,13 +1,37 @@
+import { useState } from "react";
+
+import Button from "./Button";
+
 function Hour() {
+  const [activeButton, setActiveButton] = useState(false);
+
+  function toggleMenu() {
+    setActiveButton((prev) => !prev);
+  }
+
   return (
     <>
       <div className="containerHour">
         <div className="headerHour">
           <span>Hourly forecast</span>
-          <button className="btnUnits tue">
-            Tuesday <i class="fa-solid fa-caret-down"></i>
-          </button>
+          <Button
+            isActive={activeButton}
+            onClick={toggleMenu}
+            customClass="btnUnits tue"
+          />
+            {activeButton && (
+            <ul className="dropdownMenu">
+              <li>Monday</li>
+              <li>Tuesday</li>
+              <li>Wednesday</li>
+              <li>Thrusday</li>
+              <li>Friday</li>
+              <li>Saturday</li>
+              <li>Sunday</li>
+            </ul>
+            )}
         </div>
+
         <ul>
           <li>
             <div>
