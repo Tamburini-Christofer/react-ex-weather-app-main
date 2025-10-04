@@ -3,7 +3,7 @@ function Info() {
     <>
         <div className="containerInfo">
             <div>
-                <h5>Fells Like</h5>
+                <h5>Feels Like</h5>
                 <span>64°</span>
             </div>
             <div>
