@@ -71,13 +71,12 @@ h1{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  background-color: #4557D8;
   height: 100%;
+  gap: 20px;
 }
 
 .containerMain div{
-  background-color: brown;
-  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .item1{
@@ -90,4 +89,20 @@ h1{
 .item3,
 .item4{
   grid-column: 2 span;
+}
+
+.containerToday{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  background-color: #3736B6;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.containerToday div:last-child{
+    font-size: 64px;
+    font-style: italic;
 }
