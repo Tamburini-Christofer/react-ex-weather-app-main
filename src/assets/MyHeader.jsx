@@ -1,16 +1,14 @@
-function MyHeader = () => {
+function MyHeader () {
     return(
         <>
             <header>
-                <div>
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    <button>Units </button>
+                <div className="containerHeader">
+                    <img src="../../public/img/logo.svg" alt="Logo applicazione"/>
+                    <button className="btnUnits"><i class="fa-solid fa-gear"></i> Units <i class="fa-solid fa-caret-down"></i> </button>
                 </div>
             </header>
-        
-        
         </>
     )
 }
+
+export default MyHeader;
