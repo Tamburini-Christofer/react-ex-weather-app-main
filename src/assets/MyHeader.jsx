@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import Button from "../assets/components/Button";
+import Button from "./components/Button";
+import MenuOption from "./components/MenuOption";
 
 function MyHeader() {
   const [activeButton, setActiveButton] = useState(false);
@@ -13,26 +14,14 @@ function MyHeader() {
     <>
       <header>
         <div className="containerHeader">
-          <img src="../../public/img/logo.svg" alt="Logo applicazione" />
+          <img src="../../public/img/logo.svg" alt="Logo applicazione" id="logo"/>
           <Button
           isActive={activeButton}
           onClick={toggleMenu}
-          customClass="btnUnits tue"/>
+          customClass="btnUnits tue"
+          content="Units"/>
           {activeButton && (
-            <ul className="headerdropdownMenu">
-              <h5>Switch to Imperial</h5>
-              <span>Temperature</span>
-              <li>Celsius (°C)</li>
-              <li>Fahrenheit (°F)</li>
-              <hr />
-              <>Wind Speed</>
-              <li>km/h</li>
-              <li>mph</li>
-              <hr />
-              <span>Precipitation</span>
-              <li>Miilimeters (mm)</li>
-              <li>Inches(in)</li>
-            </ul>
+            <MenuOption />
           )}
         </div>
       </header>

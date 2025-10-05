@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Button from "./Button";
+import Button from "./components/Button";
 
 function Hour() {
   const [activeButton, setActiveButton] = useState(false);
@@ -18,6 +18,7 @@ function Hour() {
             isActive={activeButton}
             onClick={toggleMenu}
             customClass="btnUnits tue"
+            content="Day"
           />
             {activeButton && (
             <ul className="dropdownMenu">

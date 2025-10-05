@@ -1,10 +1,10 @@
-function Button({isActive, onClick, children, customClass}) {
+function Button({isActive, onClick, children, content,  customClass}) {
   return (
         <button 
             onClick={onClick}
             className={`${customClass} ${isActive ? "active" : ""}`}>
             {children}
-            Day <i class="fa-solid fa-caret-down"></i> 
+            {content === "Units" ? <i class="fa-solid fa-gear"></i> : ""} { content }<i class="fa-solid fa-caret-down"></i> 
         </button>
   );
 }
