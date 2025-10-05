@@ -1,6 +1,13 @@
 import { useState } from "react";
 
 import Button from "./components/Button";
+import CardHour from "./components/CardHour";
+
+const nuvoloso = "/img/icon-overcast.webp";
+const soleggiato = "/img/icon-partly-cloudy.webp";
+const sole = "/img/icon-sunny.webp";
+const neve = "/img/icon-snow.webp";
+const nebbia = "/img/icon-fog.webp";
 
 function Hour() {
   const [activeButton, setActiveButton] = useState(false);
@@ -34,79 +41,14 @@ function Hour() {
         </div>
 
         <ul>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-overcast.webp" alt="" />
-              <span>3 PM</span>
-            </div>
-            <div>
-              <span className="gradi">68°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-partly-cloudy.webp" alt="" />
-              <span>4 PM</span>
-            </div>
-
-            <div>
-              <span className="gradi">68°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-sunny.webp" alt="" />
-              <span>5 PM</span>
-            </div>
-            <div>
-              <span className="gradi">68°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-overcast.webp" alt="" />
-              <span>6 PM</span>
-            </div>
-            <div>
-              <span className="gradi">66°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-snow.webp" alt="" />
-              <span>7 PM</span>
-            </div>
-            <div>
-              <span className="gradi">66°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-fog.webp" alt="" />
-              <span>8 PM</span>
-            </div>
-            <div>
-              <span className="gradi">64°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-snow.webp" alt="" />
-              <span>9 PM</span>
-            </div>
-            <div>
-              <span className="gradi">63°</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="../../../public/img/icon-overcast.webp" alt="" />
-              <span>10 PM</span>
-            </div>
-            <div>
-              <span className="gradi">63°</span>
-            </div>
-          </li>
+        <CardHour img={nuvoloso} alt="Nuvoloso" hour="3PM" degrees="68°" />
+        <CardHour img={soleggiato} alt="Soleggiato" hour="4PM" degrees="68°" />
+        <CardHour img={sole} alt="Sole" hour="5PM" degrees="68°" />
+        <CardHour img={nuvoloso} alt="Nuvoloso" hour="6PM" degrees="66°" />
+        <CardHour img={neve} alt="Neve" hour="7PM" degrees="66°" />
+        <CardHour img={nebbia} alt="Nebbia" hour="8PM" degrees="64°" />
+        <CardHour img={neve} alt="Neve" hour="9PM" degrees="63°" />
+        <CardHour img={nuvoloso} alt="Nuvoloso" hour="10PM" degrees="63°" />
         </ul>
       </div>
     </>
